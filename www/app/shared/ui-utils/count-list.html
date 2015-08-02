@@ -1,0 +1,7 @@
+<ion-list>
+    <ion-item class="count-list-item" ng-repeat="item in itemList">
+        <div class="activity-count" ng-if="item.count">{{item.count}}</div>
+        <div class="activity-title" ng-if="item.title">{{item.title}}</div>
+        <div class="activity-icon" ng-if="item.icon"><i class="fa {{item.icon}}"></i></div>
+    </ion-item>
+</ion-list>

@@ -1,0 +1,23 @@
+<ion-view view-title="{{vm.user_firstname}}'s Profile">
+    <ion-content>
+        <div class="profile-display-container">
+            <div class="profile-background" style="background-image:url('{{vm.pro_background}}')">
+                <div class="profile-pic-container" style="background-image:url('{{vm.pro_pic}}')"></div>
+                <div class="overlay-box"></div>
+                <p class="name-title white-name">Felix Su</p>
+            </div>
+        </div>
+        <info-section title="About">
+            <about-section section-list="vm.sectionList"></about-section>
+        </info-section>
+        <info-section title="Favorite Activities">
+            <count-list item-list="vm.itemList"></count-list>
+        </info-section>
+        <info-section title="Most Visited Places">
+            <count-list item-list="vm.visitedList"></count-list>
+        </info-section>
+        <info-section title="Best Friends">
+            <user-grid users-list="vm.usersList"></user-grid>
+        </info-section>
+    </ion-content>
+</ion-view>

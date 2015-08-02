@@ -1,0 +1,22 @@
+@import "theme_variables";
+
+.name-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 30px;
+}
+
+.white-name {
+  color: white;
+}
+
+.info-rectangle {
+  width: 100%;
+  height: 24px;
+  font-size: 16px;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: white;
+  background-color: $positive;
+  padding: 2px 0 2px 10px;
+}
