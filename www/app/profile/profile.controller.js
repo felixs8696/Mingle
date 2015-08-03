@@ -14,10 +14,11 @@ function ProfileCtrl() {
   vm.pro_background = '././img/stairs.jpg';
   vm.sectionList = {};
   vm.sectionList[0] = {section: 'university', icon: 'fa-book', description: 'UC Berkeley'};
-  vm.sectionList[1] = {section: 'phoneNumber', icon: 'fa-phone', description: '(732) 673-4738'};
+  vm.sectionList[1] = {section: 'birthDate', icon: 'fa-gift', description: 'August 6, 1996'};
   vm.sectionList[2] = {section: 'hometown', icon: 'fa-home', description: 'Plainsboro, NJ'};
-  vm.sectionList[3] = {section: 'email', icon: 'fa-envelope-square', description: 'felixs8696@berkeley.edu'};
-  vm.sectionList[4] = {section: 'birthDate', icon: 'fa-gift', description: 'August 6, 1996'};
+  vm.sectionList[3] = {section: 'phoneNumber', icon: 'fa-phone', description: '(732) 673-4738'};
+  vm.sectionList[4] = {section: 'currentTown', icon: 'fa-location-arrow', description: 'Berkeley, CA'};
+  vm.sectionList[5] = {section: 'email', icon: 'fa-envelope-square', description: 'felixs8696@berkeley.edu'};
 
   //Favorite Activities
   vm.itemList = {};
