@@ -18,6 +18,15 @@ angular
           }
         }
       })
+      .state('app.login', {
+        url: '/login',
+        views: {
+          'menuContent': {
+            templateUrl: 'app/login/login.html',
+            controller: 'LoginCtrl as vm'
+          }
+        }
+      })
 
       .state('app.browse', {
         url: '/browse',
