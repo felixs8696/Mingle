@@ -5,6 +5,10 @@
                 <div class="profile-pic-container" style="background-image:url('{{vm.pro_pic}}')"></div>
                 <div class="overlay-box"></div>
                 <p class="name-title white-name">Felix Su</p>
+                <div class="status-container">
+                    <div class="status-icon" ng-style="{'background-color': vm.availability.color}"></div>
+                    <p class="profile-status white-name">{{vm.availability.status}}</p>
+                </div>
             </div>
         </div>
         <info-section title="About">

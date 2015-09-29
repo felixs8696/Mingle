@@ -12,6 +12,8 @@ function ProfileCtrl() {
   vm.user_firstname = vm.user.substring(0,vm.user.indexOf(' '));
   vm.pro_pic = '././img/felix_sq.jpg';
   vm.pro_background = '././img/stairs.jpg';
+  vm.availability = {status: 'Free', color: 'yellowgreen'};
+
   vm.sectionList = {};
   vm.sectionList[0] = {section: 'university', icon: 'fa-book', description: 'UC Berkeley'};
   vm.sectionList[1] = {section: 'birthDate', icon: 'fa-gift', description: 'August 6, 1996'};
