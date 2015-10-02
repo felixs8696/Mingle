@@ -7,7 +7,8 @@ AuthService.$inject = ["FirebaseRoot", "$log"];
 function AuthService(FirebaseRoot, $log){
   var factory = {
     authenticateUser: authenticateUser,
-    createUser: createUser
+    createUser: createUser,
+    getUserAuthStatus: getUserAuthStatus
   };
 
   function createUser(credentials) {
@@ -32,8 +33,15 @@ function AuthService(FirebaseRoot, $log){
         $log.context("LoginModel.authenticateUser()").error("Login Failed!", error);
       } else {
         $log.context("LoginModel.authenticateUser()").debug("Authenticated successfully with payload:", authData);
+        getUserAuthStatus();
       }
     });
+  }
+
+  function getUserAuthStatus(){
+    var status = FirebaseRoot.getAuth();
+    $log.context('AuthService.getCurrentAuthUser').debug("Auth status: ", status);
+    return status;
   }
 
   return factory;

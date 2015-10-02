@@ -1,16 +1,36 @@
-<ion-view view-title="Login" hide-back-button="true">
-  <ion-content class="padding">
-      <h2 class="open-sans-title light-grey center small-title">LOG IN</h2>
-      <form ng-submit="vm.authenticateUser(input)">
-        <label class="item field item-input">
-          <input type="email" placeholder="email address" ng-model="input.email">
+<!--<ion-view view-title="Login" hide-back-button="true">-->
+  <!--<ion-content class="padding">-->
+      <!--<h2 class="open-sans-title light-grey center small-title">LOG IN</h2>-->
+      <!--<form ng-submit="vm.authenticateUser(input)">-->
+        <!--<label class="item field item-input">-->
+          <!--<input type="email" placeholder="email address" ng-model="input.email">-->
+        <!--</label>-->
+        <!--<label class="item field item-input">-->
+          <!--<input type="password" placeholder="password" ng-model="input.password">-->
+        <!--</label>-->
+        <!--<p class="right-align"><a ui-sref="reset">I forgot my password.</a> </p>-->
+        <!--<button class="button button-outline button-calm full-width margin-bottom-10" type="submit">Login</button>-->
+      <!--</form>-->
+      <!--<button class="button button-outline button-positive full-width" ui-sref="signup">Create a new account</button>-->
+  <!--</ion-content>-->
+<!--</ion-view>-->
+
+<ion-view view-title="Login">
+  <ion-content>
+    <form ng-submit="vm.userLogin(input)">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Email</span>
+          <input type="text" ng-model="input.email">
         </label>
-        <label class="item field item-input">
-          <input type="password" placeholder="password" ng-model="input.password">
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" ng-model="input.password">
         </label>
-        <p class="right-align"><a ui-sref="reset">I forgot my password.</a> </p>
-        <button class="button button-outline button-calm full-width margin-bottom-10" type="submit">Login</button>
-      </form>
-      <button class="button button-outline button-positive full-width" ui-sref="signup">Create a new account</button>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Log in</button>
+        </label>
+      </div>
+    </form>
   </ion-content>
 </ion-view>

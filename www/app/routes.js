@@ -7,7 +7,10 @@ angular
         url: '/app',
         abstract: true,
         templateUrl: 'templates/menu.html',
-        controller: 'AppCtrl'
+        controller: 'AppCtrl',
+        data: {
+          userRestricted: true
+        }
       })
 
       .state('app.search', {
@@ -16,6 +19,9 @@ angular
           'menuContent': {
             templateUrl: 'templates/search.html'
           }
+        },
+        data: {
+          userRestricted: true
         }
       })
       .state('app.login', {
@@ -25,15 +31,20 @@ angular
             templateUrl: 'app/auth/login.html',
             controller: 'LoginCtrl as vm'
           }
+        },
+        data: {
+          userRestricted: false
         }
       })
-
       .state('app.browse', {
         url: '/browse',
         views: {
           'menuContent': {
             templateUrl: 'templates/browse.html'
           }
+        },
+        data: {
+          userRestricted: true
         }
       })
       .state('app.playlists', {
@@ -43,6 +54,9 @@ angular
             templateUrl: 'templates/playlists.html',
             controller: 'PlaylistsCtrl'
           }
+        },
+        data: {
+          userRestricted: true
         }
       })
 
@@ -53,6 +67,9 @@ angular
             templateUrl: 'templates/playlist.html',
             controller: 'PlaylistCtrl'
           }
+        },
+        data: {
+          userRestricted: true
         }
       })
       .state('app.profile', {
@@ -62,6 +79,9 @@ angular
             templateUrl: 'app/profile/profile.html',
             controller: 'ProfileCtrl as vm'
           }
+        },
+        data: {
+          userRestricted: true
         }
       });
     // if none of the above states are matched, use this as the fallback
