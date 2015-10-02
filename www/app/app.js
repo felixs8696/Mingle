@@ -1,9 +1,14 @@
 angular.module('mingle', ['ionic',
                           'mingle.controllers',
+                          'mingle.login',
                           'mingle.profile',
-                          'mingle.ui-utils'])
-
-  .run(function($ionicPlatform) {
+                          'mingle.ui-utils',
+                          'mingle.utils'])
+  .config(['$logProvider', function($logProvider) {
+    $logProvider.debugEnabled(true); // default is true
+  }])
+  .run(function($ionicPlatform, $log, EnhanceLogger) {
+    EnhanceLogger.setLog($log);
     $ionicPlatform.ready(function() {
       // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
       // for form inputs)

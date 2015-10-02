@@ -22,7 +22,7 @@ angular
         url: '/login',
         views: {
           'menuContent': {
-            templateUrl: 'app/login/login.html',
+            templateUrl: 'app/auth/login.html',
             controller: 'LoginCtrl as vm'
           }
         }
