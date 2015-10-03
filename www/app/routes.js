@@ -12,18 +12,6 @@ angular
           userRestricted: true
         }
       })
-
-      .state('app.search', {
-        url: '/search',
-        views: {
-          'menuContent': {
-            templateUrl: 'templates/search.html'
-          }
-        },
-        data: {
-          userRestricted: true
-        }
-      })
       .state('app.login', {
         url: '/login',
         views: {
@@ -34,42 +22,6 @@ angular
         },
         data: {
           userRestricted: false
-        }
-      })
-      .state('app.browse', {
-        url: '/browse',
-        views: {
-          'menuContent': {
-            templateUrl: 'templates/browse.html'
-          }
-        },
-        data: {
-          userRestricted: true
-        }
-      })
-      .state('app.playlists', {
-        url: '/playlists',
-        views: {
-          'menuContent': {
-            templateUrl: 'templates/playlists.html',
-            controller: 'PlaylistsCtrl'
-          }
-        },
-        data: {
-          userRestricted: true
-        }
-      })
-
-      .state('app.single', {
-        url: '/playlists/:playlistId',
-        views: {
-          'menuContent': {
-            templateUrl: 'templates/playlist.html',
-            controller: 'PlaylistCtrl'
-          }
-        },
-        data: {
-          userRestricted: true
         }
       })
       .state('app.profile', {
