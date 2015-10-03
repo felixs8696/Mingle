@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecbdf6bb-d09d-4ed8-b53b-9af7ea97d6c1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/templates/browse.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/templates/playlist.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/templates/playlists.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/templates/search.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers.js" afterPath="$PROJECT_DIR$/www/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/auth/login.controller.js" afterPath="$PROJECT_DIR$/www/app/auth/login.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/auth/login.html" afterPath="$PROJECT_DIR$/www/app/auth/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/menu.html" afterPath="$PROJECT_DIR$/www/templates/menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/profile/profile.html" afterPath="$PROJECT_DIR$/www/app/profile/profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/routes.js" afterPath="$PROJECT_DIR$/www/app/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="ecbdf6bb-d09d-4ed8-b53b-9af7ea97d6c1" name="Default" comment="" />
     <ignored path="mingle.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
