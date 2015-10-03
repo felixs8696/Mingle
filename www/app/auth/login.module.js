@@ -1,2 +1,2 @@
 angular
-  .module('mingle.login', ['firebase', 'mingle.firebase-root']);
+  .module('mingle.auth', ['firebase', 'mingle.firebase-root']);

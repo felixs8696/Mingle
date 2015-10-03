@@ -1,5 +1,5 @@
 angular
-  .module('mingle.login')
+  .module('mingle.auth')
   .controller('LoginCtrl',LoginCtrl);
 
 LoginCtrl.$inject = ["AuthService", "$state"];
@@ -9,7 +9,9 @@ function LoginCtrl(AuthService, $state) {
   vm.userLogin = userLogin;
 
   function userLogin(input) {
-    AuthService.authenticateUser(input);
-    $state.go("app.profile");
+    AuthService.authenticateUser(input)
+      .then(function() {
+        $state.go("app.profile");
+      });
   }
 }

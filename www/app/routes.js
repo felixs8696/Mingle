@@ -7,7 +7,7 @@ angular
         url: '/app',
         abstract: true,
         templateUrl: 'templates/menu.html',
-        controller: 'AppCtrl',
+        controller: 'AppCtrl as vm',
         data: {
           userRestricted: true
         }
@@ -85,5 +85,5 @@ angular
         }
       });
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/profile');
+    //$urlRouterProvider.otherwise('/app/profile');
   });
