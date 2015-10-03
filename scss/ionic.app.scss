@@ -19,7 +19,9 @@ $dark:                            #444 !default;
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 $salmon: #F67060;
-$positive: $salmon;
+$oxford-blue: #002147;
+$main: $salmon;
+$positive: $main;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
@@ -29,4 +31,4 @@ $positive: $salmon;
 @import "www/lib/fontawesome/scss/font-awesome";
 @import "static_style";
 
-$positive: $salmon !default;
+$positive: $main !default;
