@@ -1,6 +1,7 @@
 angular.module('mingle', ['ionic',
                           'mingle.controllers',
                           'mingle.auth',
+                          'mingle.list',
                           'mingle.profile',
                           'mingle.ui-utils',
                           'mingle.utils'])

@@ -35,6 +35,18 @@ angular
         data: {
           userRestricted: true
         }
+      })
+      .state('app.main', {
+        url: '/',
+        views: {
+          'menuContent': {
+            templateUrl: 'app/list/list.html',
+            controller: 'ListCtrl as vm'
+          }
+        },
+        data: {
+          userRestricted: true
+        }
       });
     // if none of the above states are matched, use this as the fallback
     //$urlRouterProvider.otherwise('/app/profile');
